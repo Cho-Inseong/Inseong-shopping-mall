@@ -120,3 +120,18 @@ header ul {
     }
   }
   
+/* 푸터 영역 */
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #007BFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 300px;
+    height: 150px;
+    margin-right: 20px;
+}
