@@ -60,10 +60,9 @@ header ul {
     margin: 0 auto;
 }
 
-#container div {
+/* #container div {
     width: 100%;
-    background-color: salmon;
-}
+} */
 
 /* 슬라이드 영역 */
 .slide_Area {
@@ -134,4 +133,54 @@ footer img {
     width: 300px;
     height: 150px;
     margin-right: 20px;
+}
+
+/* 회원가입 영역 */
+#wrapped {
+    width: 100%;
+    height: 710px;
+    display: flex;
+    align-items: center;
+}
+
+.sign_up_area {
+    width: 500px;
+    height: 500px;
+    border: solid 3px #007BFF;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.sign_up_form {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.sign_up_logo {
+    width: 150px;
+    height: 100px;
+}
+
+.sign_up_logo_back {
+    width: 100%;
+    background-color: #007BFF;
+    display: flex;
+    justify-content: center;
+}
+
+.sign_up_p {
+    margin: 5px 5px 5px 0px;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+#sign_up_submit {
+    width: 100%;
+}
+
+.btn-myblue {
+    background-color: #007BFF;
+    color: white;
 }

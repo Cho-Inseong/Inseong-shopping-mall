@@ -1,0 +1,29 @@
+<main id="container">
+    <div id="wrapped">
+        <div class="sign_up_area">
+            <div class="sign_up_logo_back">
+                <img class="sign_up_logo" src="../IMG/logo.png" alt="">
+            </div>
+            <div class="sign_up_form">
+                <p class="sign_up_p">이름</p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <p class="sign_up_p">아이디</p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2">중복검사</button>
+                </div>
+                <p class="sign_up_p">이메일</p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <p class="sign_up_p">비밀번호</p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <button id="sign_up_submit" type="button" class="btn btn-myblue">회원가입</button>
+            </div>
+        </div>
+    </div>
+</main>
