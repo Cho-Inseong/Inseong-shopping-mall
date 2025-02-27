@@ -15,6 +15,15 @@ switch ($resource[1]) {
     case 'sign_up':
         $pages = './views/sign_up.php';
         break;
+    // api
+    case 'overlap':
+        include('./api/overlap_api.php');
+        exit();
+        break;
+    default:
+        http_response_code(404);
+        echo "경로잘못됨";
+        exit;
 }
 ?>
 <!DOCTYPE html>
