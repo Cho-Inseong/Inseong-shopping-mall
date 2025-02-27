@@ -31,7 +31,9 @@ header img {
 header ul {
     display: flex;
     align-items: center;
-    gap: 15px;    
+    gap: 15px;
+    padding: 0px;
+    margin: 0px;
 }
 
 /* header ul li { */
@@ -145,7 +147,7 @@ footer img {
 
 .sign_up_area {
     width: 500px;
-    height: 500px;
+    height: 550px;
     border: solid 3px #007BFF;
     border-radius: 10px;
     margin: 0 auto;
@@ -183,4 +185,10 @@ footer img {
 .btn-myblue {
     background-color: #007BFF;
     color: white;
+}
+
+.captcha_logo {
+    width: 100px;
+    height: 38px;
+    padding-right: 5px;
 }

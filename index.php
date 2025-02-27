@@ -1,6 +1,7 @@
 <?php
 include("./config/DB_Connection.php");
 session_start();
+$_SESSION['captcha'] = "G1U7N";
 
 $request = $_SERVER['REQUEST_URI'];
 $path = explode("?", $request);
@@ -15,9 +16,16 @@ switch ($resource[1]) {
     case 'sign_up':
         $pages = './views/sign_up.php';
         break;
+    case 'sign_in':
+        $pages = './views/sign_in.php';
+        break;
     // api
     case 'overlap':
         include('./api/overlap_api.php');
+        exit();
+        break;
+    case 'sign_up_api':
+        include('./api/sign_up_api.php');
         exit();
         break;
     default:
