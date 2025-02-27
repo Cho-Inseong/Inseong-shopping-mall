@@ -1,4 +1,10 @@
+const id_and_pw_regex = (target) => {
+    target.value = target.value.replace(/[^a-zA-Z0-9]/g, "");
+}
 
+const name_regex = (target) => {
+    target.value = target.value.replace(/[^가-힣-ㄱ-ㅎ]+$/g, "");
+}
 
 function overlap() {
     const user_id_val = $("#id").val();
