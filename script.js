@@ -42,7 +42,7 @@ function sign_up() {
     const user_email_val = $("#email").val();
     const user_pw_val = $("#password").val();
     const captcha_val = $("#captcha").val();
-
+    
     $.post("./sign_up_api", {
         user_name: user_name_val,
         user_id: user_id_val,
@@ -59,7 +59,7 @@ function sign_up() {
                 return
             }
         }
-
+        
         if(data.success) {
             alert(data.message);
             location.href = "./";
@@ -73,5 +73,37 @@ function sign_up() {
         
     }).fail(function() {
         alert("서버 요청 실패");
+    })
+}
+
+// 로그인
+function sign_in() {
+    const user_id_val = $("#sign_in_id").val();
+    const user_pw_val = $("#sign_in_password").val();
+    const user_tier_val = $(":input:radio[name=tier_radio]:checked").val();
+    
+    $.post("./sign_in_api", {
+        user_id: user_id_val,
+        user_pw: user_pw_val,
+        user_tier: user_tier_val,
+    }).done(function(data) {
+        if(typeof data === "string") {
+            try {
+                data = JSON.parse(data);
+            } catch(e) {
+                alert("서버 응답 오류: JSON 변환 실패");
+                console.error("JSON Parse Error:",e, data);
+                return;
+            }
+        }
+        
+        if(data.success) {
+            alert(data.message);
+            location.href = "./"
+        } else {
+            alert(data.message);
+            console.error(data.error);
+            location.reload();
+        }
     })
 }

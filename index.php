@@ -19,6 +19,12 @@ switch ($resource[1]) {
     case 'sign_in':
         $pages = './views/sign_in.php';
         break;
+    case 'mypage':
+        $pages = './views/mypage.php';
+        break;
+    case 'add_goods':
+        $pages = './views/add_goods.php';
+        break;
     // api
     case 'overlap':
         include('./api/overlap_api.php');
@@ -26,6 +32,14 @@ switch ($resource[1]) {
         break;
     case 'sign_up_api':
         include('./api/sign_up_api.php');
+        exit();
+        break;
+    case 'sign_in_api':
+        include('./api/sign_ip_api.php');
+        exit();
+        break;
+    case 'logout_api':
+        include('./api/logout_api.php');
         exit();
         break;
     default:
